@@ -257,18 +257,6 @@
           }
         }
       }
-      /*
-          bgLoader: (block, url, url2) ->
-            console.log url
-            $(block).css('background' : 'top center url("' + url2 + '") no-repeat').load(
-              console.log 'loaded'
-              $('body').append($('div', {style : 'background: url("' + url + '")', id : 'uiloaderid'}).load(
-                $(block).css('background' : 'top center url("' + url + '") no-repeat')
-                $('#uiloaderid').remove()
-              ))
-            )
-      
-          */
     };
   });
 }).call(this);
