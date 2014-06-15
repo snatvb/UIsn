@@ -1,0 +1,50 @@
+.uisn-modalui {
+  width: 470px;
+  height: auto;
+  background: #f7f7f7;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-bottom: 3px solid #b6b6b6;
+  overflow: hidden;
+  
+  z-index: 2000; }
+  .uisn-modalui .uisn-modalui-header {
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #eeeeee; }
+  .uisn-modalui .uisn-modalui-body {
+    padding: 15px; }
+  .uisn-modalui h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold; }
+
+.uisn-modalui-backdrop {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1900;
+  background-color: black;
+  display: none; }
+
+.uisn-modalui-scroll {
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000; }

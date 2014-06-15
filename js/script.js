@@ -3,4 +3,5 @@
     _.start();
     _.checkbox.start();
     _.radiobutton.start();
+  });
 }).call(this);

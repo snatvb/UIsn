@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>UIsn - Free JSUI</title>
+    <meta name="description" content="Demo UIsn"/>
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
+
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <div class="row demo-row">
+        <div class="col-xs-3">
+          <a href="#uisn-modal" class="btn btn-block btn-lg btn-primary uisn-modal"  data-target="login">Модальное окно</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-warning">Warning Button</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-default">Default Button</a>
+        </div>
+        <div class="col-xs-3">
+          <a href="#fakelink" class="btn btn-block btn-lg btn-danger">Danger Button</a>
+        </div>
+      </div> <!-- /row -->
+
+    </div>
+    
+
+    <!-- ModalUI -->
+  <div class="uisn-modalui-scroll" id="login">
+      <div class="uisn-modalui">
+        <div class="uisn-modalui-header">
+            <button type="button" class="close uisn-closer-btn">×</button>
+            <h2>Авторизация</h2>
+        </div>
+        <div class="uisn-modalui-body">
+            <div class="b-w320px centrator">
+                <form role="form" action="#">
+                    <input type="text" class="form-control" placeholder="Логин">
+                    <br>
+                    <input type="password" class="form-control" placeholder="Пароль">
+                    <div class="checkbox-cont">
+                        <label class="checkbox-inline">
+                          <input type="checkbox" class="checkbox-style" checked> Запомнить меня
+                        </label>
+                    </div>
+                  <button type="submit" class="btn btn-info">Войти</button><button type="submit" class="btn btn-warning pull-right">Забыл пароль</button>
+                </form>
+            </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="js/jq.lib.js"></script>
+    <script src="js/UIsn.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

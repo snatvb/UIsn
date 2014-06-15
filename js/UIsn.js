@@ -42,7 +42,7 @@
           target.fadeIn(400);
           if (this.options.addBackground === true) {
             $('body').append($('<div>', {
-              'class': 'modaluisn-backdrop'
+              'class': 'uisn-modalui-backdrop'
             }).show()).css({
               'overflow': 'hidden'
             });
@@ -61,7 +61,7 @@
         if (!e) {
           return false;
         }
-        mbd = $('.modaluisn-backdrop');
+        mbd = $('.uisn-modalui-backdrop');
         if (e.is(":visible") === true) {
           e.fadeOut(300);
         }

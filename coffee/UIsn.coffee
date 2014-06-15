@@ -46,7 +46,7 @@ $(document).ready(->
       if !target then return false
       if target.is(":visible") is false
         target.fadeIn(400)
-        if @options.addBackground is true then $('body').append($('<div>', {'class': 'modaluisn-backdrop'}).show()).css({'overflow' : 'hidden'})
+        if @options.addBackground is true then $('body').append($('<div>', {'class': 'uisn-modalui-backdrop'}).show()).css({'overflow' : 'hidden'})
         target.find('.uisn-modalui').click((event)->
           event.stopPropagation()
         )
@@ -58,7 +58,7 @@ $(document).ready(->
     hideModal: (e) ->
       #console.log e
       if !e then return false
-      mbd = $('.modaluisn-backdrop')
+      mbd = $('.uisn-modalui-backdrop')
       if e.is(":visible") is true then e.fadeOut(300)
       if mbd? then mbd.fadeOut(300, () ->
         mbd.remove()
