@@ -12,10 +12,10 @@ $(document).ready(->
     start: () ->
       # Сбор блоков и элементов
 
-      @modalsbtn = $('.uimodal')
-      @closers = $('.closer-btn')
-      @dropers = $('.dropdown-hover')
-      @showers = $('.shower')
+      @modalsbtn = $('.uisn-modal')
+      @closers = $('.uisn-closer-btn')
+      @dropers = $('.uisn-dropdown-hover')
+      @showers = $('.uisn-shower')
 
       #construct
 
@@ -26,11 +26,11 @@ $(document).ready(->
         _.hideModal($(@).parent().parent().parent())
       )
       @dropers.hover(() ->
-        _.hoverMenu($(@).find('.dropdown-hover-menu'))
+        _.hoverMenu($(@).find('.uisn-dropdown-hover-menu'))
       , ()->
-        _.hideMenu($(@).find('.dropdown-hover-menu'))
+        _.hideMenu($(@).find('.uisn-dropdown-hover-menu'))
       ).click(() ->
-        _.hoverMenu($(@).find('.dropdown-hover-menu'))
+        _.hoverMenu($(@).find('.uisn-dropdown-hover-menu'))
         return false
       )
       @showers.click(()->
@@ -46,8 +46,8 @@ $(document).ready(->
       if !target then return false
       if target.is(":visible") is false
         target.fadeIn(400)
-        if @options.addBackground is true then $('body').append($('<div>', {'class': 'modalui-backdrop'}).show()).css({'overflow' : 'hidden'})
-        target.find('.modalui').click((event)->
+        if @options.addBackground is true then $('body').append($('<div>', {'class': 'modaluisn-backdrop'}).show()).css({'overflow' : 'hidden'})
+        target.find('.uisn-modalui').click((event)->
           event.stopPropagation()
         )
         target.click(()->
@@ -58,7 +58,7 @@ $(document).ready(->
     hideModal: (e) ->
       #console.log e
       if !e then return false
-      mbd = $('.modalui-backdrop')
+      mbd = $('.modaluisn-backdrop')
       if e.is(":visible") is true then e.fadeOut(300)
       if mbd? then mbd.fadeOut(300, () ->
         mbd.remove()
@@ -110,15 +110,15 @@ $(document).ready(->
 
     # Замена чекбоксов
     checkbox :
-      sample : '.checkbox-style'
+      sample : '.checkbox-style-sn'
       checks : ''
       forRep : ''
       Rep : ''
 
       styles :
-        check : 'check-style'
-        container : 'check-bg'
-        block : 'bg-block'
+        check : 'check-style-sn'
+        container : 'check-bg-sn'
+        block : 'bg-block-sn'
 
 
       # Конструктор
@@ -155,15 +155,15 @@ $(document).ready(->
 
     # Замена Радио-баттонов
     radiobutton :
-      sample : '.radiobutton-style'
+      sample : '.radiobutton-style-sn'
       checks : ''
       forRep : ''
       Rep : ''
 
       styles :
-        check : 'radio-style'
-        container : 'radio-bg'
-        block : 'bg-block'
+        check : 'radio-style-sn'
+        container : 'radio-bg-sn'
+        block : 'bg-block-sn'
 
 
       # Конструктор
