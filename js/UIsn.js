@@ -9,10 +9,10 @@
         addBackground: true
       },
       start: function() {
-        this.modalsbtn = $('.uimodal');
-        this.closers = $('.closer-btn');
-        this.dropers = $('.dropdown-hover');
-        this.showers = $('.shower');
+        this.modalsbtn = $('.uisn-modal');
+        this.closers = $('.uisn-closer-btn');
+        this.dropers = $('.uisn-dropdown-hover');
+        this.showers = $('.uisn-shower');
         this.modalsbtn.click(function() {
           return _.doModal($(this));
         });
@@ -20,11 +20,11 @@
           return _.hideModal($(this).parent().parent().parent());
         });
         this.dropers.hover(function() {
-          return _.hoverMenu($(this).find('.dropdown-hover-menu'));
+          return _.hoverMenu($(this).find('.uisn-dropdown-hover-menu'));
         }, function() {
-          return _.hideMenu($(this).find('.dropdown-hover-menu'));
+          return _.hideMenu($(this).find('.uisn-dropdown-hover-menu'));
         }).click(function() {
-          _.hoverMenu($(this).find('.dropdown-hover-menu'));
+          _.hoverMenu($(this).find('.uisn-dropdown-hover-menu'));
           return false;
         });
         return this.showers.click(function() {
@@ -42,12 +42,12 @@
           target.fadeIn(400);
           if (this.options.addBackground === true) {
             $('body').append($('<div>', {
-              'class': 'modalui-backdrop'
+              'class': 'modaluisn-backdrop'
             }).show()).css({
               'overflow': 'hidden'
             });
           }
-          target.find('.modalui').click(function(event) {
+          target.find('.uisn-modalui').click(function(event) {
             return event.stopPropagation();
           });
           target.click(function() {
@@ -61,7 +61,7 @@
         if (!e) {
           return false;
         }
-        mbd = $('.modalui-backdrop');
+        mbd = $('.modaluisn-backdrop');
         if (e.is(":visible") === true) {
           e.fadeOut(300);
         }
@@ -144,14 +144,14 @@
         });
       },
       checkbox: {
-        sample: '.checkbox-style',
+        sample: '.checkbox-style-sn',
         checks: '',
         forRep: '',
         Rep: '',
         styles: {
-          check: 'check-style',
-          container: 'check-bg',
-          block: 'bg-block'
+          check: 'check-style-sn',
+          container: 'check-bg-sn',
+          block: 'bg-block-sn'
         },
         start: function() {
           var obj;
@@ -199,14 +199,14 @@
         }
       },
       radiobutton: {
-        sample: '.radiobutton-style',
+        sample: '.radiobutton-style-sn',
         checks: '',
         forRep: '',
         Rep: '',
         styles: {
-          check: 'radio-style',
-          container: 'radio-bg',
-          block: 'bg-block'
+          check: 'radio-style-sn',
+          container: 'radio-bg-sn',
+          block: 'bg-block-sn'
         },
         start: function() {
           var obj;
