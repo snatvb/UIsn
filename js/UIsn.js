@@ -144,7 +144,7 @@
         });
       },
       checkbox: {
-        sample: '.checkbox-style-sn',
+        sample: '.checkbox-style',
         checks: '',
         forRep: '',
         Rep: '',
@@ -199,7 +199,7 @@
         }
       },
       radiobutton: {
-        sample: '.radiobutton-style-sn',
+        sample: '.radiobutton-style',
         checks: '',
         forRep: '',
         Rep: '',

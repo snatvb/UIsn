@@ -140,20 +140,20 @@ input.inpt {
 .radiobutton-inline {
   padding-left: 0; }
 
-.radio-cont {
+.radio-cont-sn {
   margin: 5px 0; }
 
-.radio-bg {
+.radio-bg-sn {
   position: relative;
   display: inline-block;
   top: 3px;
   margin-right: 2px; }
-  .radio-bg .bg-block {
+  .radio-bg-sn .bg-block-sn {
     background: transparent url("../img/radiobtn.png") 0 0 no-repeat;
     width: 28px;
     height: 28px;
     cursor: pointer; }
-    .radio-bg .bg-block span {
+    .radio-bg-sn .bg-block-sn span {
       position: relative;
       width: 28px;
       height: 28px;
@@ -164,21 +164,21 @@ input.inpt {
 .checkbox-style {
   padding-left: 0; }
 
-.check-cont {
+.check-cont-sn {
   margin: 5px 0; }
 
-.check-bg {
+.check-bg-sn {
   vertical-align: top;
   position: relative;
   display: inline-block;
   top: 3px;
   margin-right: 2px; }
-  .check-bg .bg-block {
+  .check-bg-sn .bg-block-sn {
     background: transparent url("../img/checkbox.png") 0 0 no-repeat;
     width: 19px;
     height: 19px;
     cursor: pointer; }
-    .check-bg .bg-block span {
+    .check-bg-sn .bg-block-sn span {
       position: relative;
       width: 19px;
       height: 27px;

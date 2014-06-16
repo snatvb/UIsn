@@ -110,7 +110,7 @@ $(document).ready(->
 
     # Замена чекбоксов
     checkbox :
-      sample : '.checkbox-style-sn'
+      sample : '.checkbox-style'
       checks : ''
       forRep : ''
       Rep : ''
@@ -155,7 +155,7 @@ $(document).ready(->
 
     # Замена Радио-баттонов
     radiobutton :
-      sample : '.radiobutton-style-sn'
+      sample : '.radiobutton-style'
       checks : ''
       forRep : ''
       Rep : ''
