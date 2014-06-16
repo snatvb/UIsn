@@ -1,77 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>UIsn - Free JSUI</title>
-    <meta name="description" content="Demo UIsn"/>
-
-    <!-- Loading Bootstrap -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Loading Flat UI -->
-    <link href="css/flat-ui.css" rel="stylesheet">
-    <link href="css/demo.css" rel="stylesheet">
-
-
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-    <div class="container">
-      <br>
-      <div class="row demo-row">
-        <div class="col-xs-3">
-          <a href="#uisn-modal" class="btn btn-block btn-lg btn-primary uisn-modal"  data-target="login">Модальное окно</a>
-        </div>
-        <div class="col-xs-3">
-          <a href="#fakelink" class="btn btn-block btn-lg btn-warning">Warning Button</a>
-        </div>
-        <div class="col-xs-3">
-          <a href="#fakelink" class="btn btn-block btn-lg btn-default">Default Button</a>
-        </div>
-        <div class="col-xs-3">
-          <a href="#fakelink" class="btn btn-block btn-lg btn-danger">Danger Button</a>
-        </div>
-      </div> <!-- /row -->
-
-    </div>
-    
-
-    <!-- ModalUI -->
-  <div class="uisn-modalui-scroll" id="login">
-      <div class="uisn-modalui">
-        <div class="uisn-modalui-header">
-            <button type="button" class="close uisn-closer-btn">×</button>
-            <h2>Авторизация</h2>
-        </div>
-        <div class="uisn-modalui-body">
-            <div class="b-w320px centrator">
-                <form role="form" action="#">
-                    <input type="text" class="form-control" placeholder="Логин">
-                    <br>
-                    <input type="password" class="form-control" placeholder="Пароль">
-                    <div class="checkbox-cont">
-                        <label class="checkbox-inline">
-                          <input type="checkbox" class="checkbox-style" checked> Запомнить меня
-                        </label>
-                    </div>
-                  <button type="submit" class="btn btn-info">Войти</button><button type="submit" class="btn btn-warning pull-right">Забыл пароль</button>
-                </form>
-            </div>
-        </div>
-      </div>
-  </div>
-
-    <!-- Load JS here for greater good =============================-->
+<html>
+<head>
+    <title>Дело</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta http-equiv="Content-Language" content="ru" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/style.css" rel="stylesheet" />
     <script src="js/jq.lib.js"></script>
+    <script src="js/jqui.lib.js"></script>
     <script src="js/UIsn.js"></script>
     <script src="js/script.js"></script>
-
-  </body>
+</head>
+<body>
+<div class="container paper relative">
+    <div></div>
+    <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <div class="secret"><img src="img/secret.png" alt="secret"> </div>
+    <div class="title-cause"><img src="img/cause.png" alt="Cause"></div>
+    <div class="content">
+        <div class="row">
+            <div class="left">Полное ФИО</div>
+            <div class="right inpt1"><input class="inpt w100p" type="text" name="name" value="Авсенин Андрей Николаевич"></div>
+        </div>
+        <div class="row">
+            <div class="left">Год Рождения</div>
+            <div class="right inpt2"><input class="inpt w100p" type="text" name="year" value="1995"></div>
+        </div>
+        <div class="row">
+            <div class="left">Место Жительства</div>
+            <div class="right inpt3"><input class="inpt w100p" type="text" name="place" value="г. Липецк, Россия"></div>
+        </div>
+        <div class="row">
+            <div class="left">Скайп</div>
+            <div class="right inpt4"><input class="inpt w100p" type="text" name="skype" value="snatvb"></div>
+        </div>
+        <div class="row">
+            <div class="left">Почта</div>
+            <div class="right inpt5"><input class="inpt w100p" type="email" name="email" value="snatvb@ya.ru"></div>
+        </div>
+        <div class="graduate">
+            Выпускник <a href="http://htmlacademy.ru/" target="_blank" title="Html Academy">htmlacademy.ru</a>
+            <label class="radiobutton-inline">
+                <input type="radio" name="htmlac" class="radiobutton-style"> Да
+            </label>
+            <label class="radiobutton-inline">
+                <input type="radio" name="htmlac" class="radiobutton-style" checked> Нет
+            </label>
+        </div>
+        <div class="skill">
+            <h2>Практические навыки</h2>
+            <p>
+                Отемтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+            </p>
+        </div>
+        <div class="check-boxes-skill">
+            <div class="col-checks">
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Методология БЭМ</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">JQuery</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Использую GRUNT</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">HAML</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">SASS</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">LESS</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">CoffeeScript</span>
+                </label>
+            </div>
+            <div class="col-checks">
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Верстка под Битрикс</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Темы для WordPress</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Шаблоны под Joomla</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Верстка под Android</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Верстка под iOS</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Верстка под Windows Phone</span>
+                </label>
+            </div>
+            <div class="col-checks">
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Верстка рассылок</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">Адаптивная верстка</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">Использую Dropbox</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style" checked> <span class="lbl">Использую Gmail</span>
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" class="checkbox-style"> <span class="lbl">Использую GitHub</span>
+                </label>
+            </div>
+        </div>
+        <div class="javascript-skill">
+            <h2>Уровень владения JavaScript</h2>
+            <div class="js-slider">
+                <div id="js-slider"></div>
+            </div>
+        </div>
+        <div class="date">
+            <div class="row">
+                <div class="left">Дата заполнения</div>
+                <div class="right inpt6"><input class="inpt w100p" type="text" name="date" value="14.06.2014"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

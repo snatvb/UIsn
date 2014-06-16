@@ -1,0 +1,225 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700)
+*
+  border: none
+  outline: none
+  font-family: 'PT Sans', sans-serif
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html, body
+  background: #797979
+  width: 100%
+  height: 100%
+  color: #2f1b15
+a
+  color: #014f98
+.container
+  padding: 1px 0
+  width: 1000px
+  margin: 0 auto
+.paper
+  background: url("../img/pattern.jpg") repeat
+.relative
+  position: relative
+.logo
+  margin: 66px 0 0 48px
+.secret
+  position: absolute
+  right: 53px
+  top: 48px
+.title-cause
+  margin: 72px auto 0 auto
+  width: 221px
+.content
+  width: 775px
+  margin: 55px auto 0 auto
+.left
+  padding-top: 15px
+  float: left
+  padding-right: 15px
+  font-weight: 700
+  font-size: 20px
+.right
+  float: left
+input.inpt
+  background: transparent url("../img/line.png") repeat-x bottom
+  padding: 0 15px 15px 15px
+  font-family: "Courier New", sans-serif
+  font-size: 30px
+  color: #2f1b15
+.inpt1
+  width: 632px
+.inpt2
+  width: 617px
+.inpt3
+  width: 573px
+.inpt4
+  width: 699px
+.inpt5
+  width: 700px
+.inpt6
+  width: 210px
+.w100p
+  width: 100%
+.row
+  padding-top: 15px
+  width: 100%
+  &:after
+    content: ""
+    display: block
+    clear: both
+.graduate
+  font-size: 20px
+  font-weight: 700
+  margin-top: 40px
+  .radiobutton-inline
+    margin-left: 10px
+
+.skill
+  margin-top: 45px
+  h2
+    font-size: 20px
+  p
+    margin-top: 20px
+    font-size: 14px
+    line-height: 22px
+    padding-left: 20px
+    background: url("../img/star.png") no-repeat 0 5px
+    min-height: 16px
+
+.check-boxes-skill
+  width: 100%
+  margin-top: 10px
+  &:after
+    content: ""
+    display: block
+    clear: both
+  .col-checks
+    width: 240px
+    float: left
+    margin-left: 20px
+    &:first-child
+      margin-left: 0
+    label
+      display: block
+      width: 100%
+      margin: 15px 0
+      font-size: 20px
+      font-weight: 700
+      span.lbl
+        display: inline-block
+        width: 210px
+.javascript-skill
+  margin-top: 80px
+.date
+  margin: 45px 0 65px 0
+
+
+.radiobutton-inline
+  padding-left: 0
+.radio-cont
+  margin: 5px 0
+.radio-bg
+  position: relative
+  display: inline-block
+  top: 3px
+  margin-right: 2px
+  .bg-block
+    background: transparent url("../img/radiobtn.png") 0 0 no-repeat
+    width: 28px
+    height: 28px
+    cursor: pointer
+    span
+      position: relative
+      width: 28px
+      height: 28px
+      background: transparent url("../img/radiobtn.png") 0 -28px no-repeat
+      display: block
+      top: 0px
+
+.checkbox-style
+  padding-left: 0
+.check-cont
+  margin: 5px 0
+.check-bg
+  vertical-align: top
+  position: relative
+  display: inline-block
+  top: 3px
+  margin-right: 2px
+  .bg-block
+    background: transparent url("../img/checkbox.png") 0 0 no-repeat
+    width: 19px
+    height: 19px
+    cursor: pointer
+    span
+      position: relative
+      width: 19px
+      height: 27px
+      background: transparent url("../img/checkbox.png") 0 -19px no-repeat
+      display: block
+      top: -9px
+      left: 2px
+
+.ui-slider
+  position: relative
+  text-align: left
+.ui-slider .ui-slider-handle
+  position: absolute
+  z-index: 2
+  width: 1.2em
+  height: 1.2em
+  cursor: default
+.ui-slider .ui-slider-range
+  position: absolute
+  z-index: 1
+  font-size: .7em
+  display: block
+  border: 0
+  background-position: 0 0
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range
+  filter: inherit
+
+.ui-slider-horizontal
+  height: .8em
+.ui-slider-horizontal .ui-slider-handle
+  top: -.3em
+  margin-left: -.6em
+.ui-slider-horizontal .ui-slider-range
+  top: 0
+  height: 100%
+.ui-slider-horizontal .ui-slider-range-min
+  left: 0
+.ui-slider-horizontal .ui-slider-range-max
+  right: 0
+
+.ui-slider-vertical
+  width: .8em
+  height: 100px
+.ui-slider-vertical .ui-slider-handle
+  left: -.3em
+  margin-left: 0
+  margin-bottom: -.6em
+.ui-slider-vertical .ui-slider-range
+  left: 0
+  width: 100%
+.ui-slider-vertical .ui-slider-range-min
+  bottom: 0
+.ui-slider-vertical .ui-slider-range-max
+  top: 0
+.javascript-skill .ui-slider .ui-slider-handle
+  background: url("../img/slider-cursor.png") no-repeat 0 0
+  width: 17px
+  height: 14px
+  &:hover
+    opacity: 0.8
+    cursor: pointer
+    transition: all .3s ease-in-out
+.javascript-skill .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all
+  background: url("../img/bg_slider_js.png") no-repeat 0px 0
+  height: 78px
+  margin-top: 25px
+  width: 762px
