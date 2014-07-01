@@ -185,16 +185,13 @@
           }
           ch = e.find($("span." + this.styles.check));
           input = e.next();
-          if (!ch.is(':visible') && !input.prop('checked')) {
+          console.log(input);
+          if (!ch.is(':visible') && !input.is('checked')) {
             ch.show();
-            return input.prop({
-              'checked': true
-            });
+            return input.attr("checked", "checked");
           } else {
             ch.hide();
-            return input.prop({
-              'checked': false
-            });
+            return input.removeAttr("checked");
           }
         }
       },
@@ -243,18 +240,10 @@
           container = e.parent().parent();
           radios = container.find($("span." + this.styles.check));
           inpts = container.find($(this.sample));
-          if (!ch.is(':visible') && !input.prop('checked')) {
-            radios.hide();
-            inpts.prop({
-              'checked': false
-            });
-            ch.show();
-            return input.prop({
-              'checked': true
-            });
-          } else {
-            return false;
-          }
+          radios.hide();
+          inpts.removeAttr("checked");
+          ch.show();
+          return input.attr("checked", "checked");
         }
       }
     };

@@ -39,7 +39,7 @@ $(document).ready(->
       )
 
 
-      # Открытие модального окна, e = эелемент на которых кликнули
+  # Открытие модального окна, e = эелемент на которых кликнули
     doModal: (e) ->
       #console.log e.data('target')
       target = if e.data('target')? then $("#" + e.data('target'))
@@ -54,7 +54,7 @@ $(document).ready(->
           _.hideModal(target))
       return false
 
-    # Закрытие модального окна, e = эелемент на которых кликнули
+  # Закрытие модального окна, e = эелемент на которых кликнули
     hideModal: (e) ->
       #console.log e
       if !e then return false
@@ -66,19 +66,19 @@ $(document).ready(->
       )
       return false
 
-    # Наведение и показ меню, e = эелемент который скрыт
+  # Наведение и показ меню, e = эелемент который скрыт
     hoverMenu: (e) ->
       if !e then return false
       if e.is(':visible') is false then e.show()
       else e.hide()
 
-    # Скрытие меню, e = эелемент который нужно скрыть
+  # Скрытие меню, e = эелемент который нужно скрыть
     hideMenu: (e) ->
       if !e then return false
       e.hide()
 
-    # Контроллер показа скрытых элементов старницы, без лишнего JS
-    # все открытия и скрытия, можно реализовать в вертске
+  # Контроллер показа скрытых элементов старницы, без лишнего JS
+  # все открытия и скрытия, можно реализовать в вертске
     shower: (e) ->
       target = if e.data('target')? then $("#" + e.data('target'))
       animate = if e.data('animate')? then e.data('animate')
@@ -92,12 +92,12 @@ $(document).ready(->
         else if animate is 'slide' then $(target).slideUp(300)
         else $(target).hide()
 
-    # Стартер скролла
+  # Стартер скролла
     scrollControl: (s) ->
       if !s then return false
       _.scrollFixed($("##{s}"))
 
-    # Прикрепление блока к верху при скроллинге
+  # Прикрепление блока к верху при скроллинге
     scrollFixed: (e) ->
       if !e then return false
       scrollPos = e.offset().top
@@ -108,7 +108,7 @@ $(document).ready(->
       )
 
 
-    # Замена чекбоксов
+  # Замена чекбоксов
     checkbox :
       sample : '.checkbox-style'
       checks : ''
@@ -121,7 +121,7 @@ $(document).ready(->
         block : 'bg-block-sn'
 
 
-      # Конструктор
+    # Конструктор
       start : () ->
         @checks = $(@sample)
         @checks.hide()
@@ -141,19 +141,20 @@ $(document).ready(->
           return false
         )
 
-      # Замена
+    # Замена
       check : (e) ->
         if !e then return false
         ch = e.find($("span." + @styles.check))
         input = e.next()
-        if !ch.is(':visible') and !input.prop('checked')
+        console.log input
+        if !ch.is(':visible') and !input.is('checked')
           ch.show()
-          input.prop('checked' : true)
+          input.attr("checked","checked")
         else
           ch.hide()
-          input.prop('checked' : false)
+          input.removeAttr("checked")
 
-    # Замена Радио-баттонов
+  # Замена Радио-баттонов
     radiobutton :
       sample : '.radiobutton-style'
       checks : ''
@@ -166,7 +167,7 @@ $(document).ready(->
         block : 'bg-block-sn'
 
 
-      # Конструктор
+    # Конструктор
       start : () ->
         @checks = $(@sample)
         @checks.hide()
@@ -186,7 +187,7 @@ $(document).ready(->
           return false
         )
 
-      # Замена
+    # Замена
       check : (e) ->
         if !e then return false
         ch = e.find($("span." + @styles.check))
@@ -194,12 +195,9 @@ $(document).ready(->
         container = e.parent().parent()
         radios = container.find($("span." + @styles.check))
         inpts = container.find($(@sample))
-        if !ch.is(':visible') and !input.prop('checked')
-          radios.hide()
-          inpts.prop('checked' : false)
-          ch.show()
-          input.prop('checked' : true)
-        else
-          return false
+        radios.hide()
+        inpts.removeAttr("checked")
+        ch.show()
+        input.attr("checked","checked")
 
 )
