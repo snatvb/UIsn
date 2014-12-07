@@ -2,8 +2,8 @@
   $(document).ready(function() {
     _.start();
     _.checkbox.start();
-    _.radiobutton.start();
-    return $("#js-slider").slider({
+    _.alingmenth.start();
+    $("#js-slider").slider({
       value: 65,
       min: 0,
       max: 100,
@@ -12,5 +12,6 @@
         return $("#js-slider").slider("value");
       }
     });
+    return _.radiobutton.start();
   });
 }).call(this);
